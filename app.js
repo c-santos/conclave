@@ -40,10 +40,13 @@ var srv = app.listen(port, function() {
 })
 
 /***** PeerServer *****/
+const { ExpressPeerServer } = require('peer');
 
-app.use('/peerjs', require('peer').ExpressPeerServer(srv, {
-	debug: true
-}))
+const peerServer = ExpressPeerServer(srv, {
+  debug: true,
+});
+
+app.use('/peerjs', peerServer);
 
 /*******
 
