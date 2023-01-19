@@ -44,20 +44,12 @@ And you will be good to go.
 
 1. Hosting peer runs the application using the steps mentioned in above.
 2. Hosting peer opens an instance of Conclave by entering the following in the address bar.
-'''
-[ip_of_host]:3000 
-'''
+```[ip_of_host]:3000 ```
 Example: If the IP address of the host is 192.168.1.2, to access Conclave, the following will be entered in the address bar:
-'''
-192.168.1.2:3000
-'''
+```192.168.1.2:3000```
 3. Other peers can collaborate by entering the following in the address bar of their own browser. 
-'''
-[ip_of_host]:3000/peers
-'''
+```[ip_of_host]:3000/peers```
 Example: Using the same example from above, other peers must enter the following:
-'''
-192.168.1.2:3000/peers
-'''
+```192.168.1.2:3000/peers```
 From here, you can choose the peer which you want to collaborate with.
 4. As long as the hosting peer is running the Node app in the terminal, new peers will be able to connect. Otherwise, no new peers will be able to join but the existing peers in the network will still be able to collaborate.
