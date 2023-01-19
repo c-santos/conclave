@@ -2,11 +2,7 @@
 
 # Conclave: Collaborate in private
 
-# No Longer Maintained
-
-Conclave was made for fun and educational purposes but it is no longer actively maintained. The creators have since moved onto other projects and work. It will remain open so that developers can ask questions and fork it. The demo at [https://conclave.tech](https://conclave.tech) will also stay up. However, feature requests will **not** be worked on by the creators at this time.
-
-Thanks again to all the developers who found this project interesting. Feel free ask questions to learn more about how it works and its internals. Hopefully you will venture off and create your own version of Conclave as well.
+forked from conclave-team/conclave
 
 ## Summary
 
@@ -15,6 +11,10 @@ Conclave is an open-source, real-time, collaborative text editor for the browser
 Intrigued by collaboration tools like Google Docs, we set out to build one from scratch. Conclave uses **Conflict-Free Replicated Data Types** (CRDT) to make sure all users stay in-sync and **WebRTC** to allow users to send messages directly to one another. The result is a private and decentralized way to collaborate on documents.
 
 For more details on how we designed and built Conclave, read our [case study](https://conclave-team.github.io/conclave-site/).
+# Prerequisites
+
+Hosting peer requires
+- Node v16.16.0
 
 # How to Run Locally
 
@@ -39,3 +39,10 @@ make run-local
 ```
 
 And you will be good to go.
+
+# How to use the application
+
+1. Hosting peer runs the application using the steps mentioned in above.
+2. Hosting peer opens an instance of Conclave by entering [ip_of_host]:3000 in the address bar of a browser.
+3. Other peers can collaborate by entering [ip_of_host]:3000/peers in the address bar of their own browser. From here, you can choose the peer which you want to collaborate with.
+4. As long as the hosting peer is running the Node app in the terminal, new peers will be able to connect. Otherwise, no new peers will be able to join but the existing peers in the network will still be able to collaborate.
