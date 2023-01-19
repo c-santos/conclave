@@ -42,14 +42,16 @@ And you will be good to go.
 
 # How to use the application
 
-1. Hosting peer runs the application using the steps mentioned in above.
-2. Hosting peer opens an instance of Conclave by entering ```[ip_of_host]:3000 ``` in the address bar.
+1. Hosting peer runs the application using the steps mentioned above.
+2. Hosting peer opens an instance of Conclave by entering ```[ip_of_host]:3000``` in the address bar.
 
     Example:
-    If the IP address of the host is ```192.168.1.2```, to access Conclave, ```192.168.1.2:3000``` must be entered in the address bar: 
+
+    If the IP address of the host is ```192.168.1.2```, to access Conclave, ```192.168.1.2:3000``` must be entered in the address bar
 3. Other peers can collaborate by entering ```[ip_of_host]:3000/peers``` in the address bar of their own browser. 
 
     Example: 
+
     Using the same example from above, other peers must enter ```192.168.1.2:3000/peers``` in the address bar.
 
 
