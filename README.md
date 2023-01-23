@@ -2,10 +2,6 @@
 
 # Conclave: Collaborate in private
 
-forked from conclave-team/conclave
-
-## Summary
-
 Conclave is an open-source, real-time, collaborative text editor for the browser built from scratch in JavaScript.
 
 Inspired by applications like Google Docs, Conclave takes advantage of realtime peer-to-peer communication enabled by WebRTC to allow users to collaboratively edit documents at the same time, without the need for a central server. Our group has modified the original application to enable collaboration in purely offline LAN and Ad hoc networks. Our implementation has been tested on Linux-based operating systems such as Ubuntu. 
