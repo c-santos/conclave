@@ -8,9 +8,22 @@ forked from conclave-team/conclave
 
 Conclave is an open-source, real-time, collaborative text editor for the browser built from scratch in JavaScript.
 
-Intrigued by collaboration tools like Google Docs, we set out to build one from scratch. Conclave uses **Conflict-Free Replicated Data Types** (CRDT) to make sure all users stay in-sync and **WebRTC** to allow users to send messages directly to one another. The result is a private and decentralized way to collaborate on documents.
+Inspired by applications like Google Docs, Conclave takes advantage of realtime peer-to-peer communication enabled by WebRTC to allow users to collaboratively edit documents at the same time, without the need for a central server. Our group has modified the original application to enable collaboration in purely offline LAN and Ad hoc networks. Our implementation has been tested on Linux-based operating systems such as Ubuntu. 
 
-For more details on how we designed and built Conclave, read our [case study](https://conclave-team.github.io/conclave-site/).
+See how the Conclave team developed the app in their [case study].(https://conclave-team.github.io/conclave-site/).
+
+# Modifications
+
+Our group has made two significant modifications to achieve the following objectives:
+1. Allow for continuous collaboration in the event of a disconnected peer.
+2. Better 
+
+## Peer Handling
+To achieve the first objective, our group has implemented the use of a P2P overlay network modeled after CAN (Content-Addressable Network). It is responsible for bootstrapping the network, appropriately balancing the P2P connections, and rearranging the network in the case of disconnected peers.
+
+## Peer Discovery
+For the second objective, the project uses and Express server to host the local PeerJS server required for WebRTC signalling. The use of WebSockets facitaltes the effortless discovery of peers in the network.
+
 # Prerequisites
 
 Hosting peer requires
