@@ -12,17 +12,17 @@ Inspired by applications like Google Docs, Conclave takes advantage of realtime 
 
 See how the Conclave team developed the app in their [case study](https://conclave-team.github.io/conclave-site/).
 
-# Modifications
+# Objectives
 
 Our group has made two significant modifications to achieve the following objectives:
 1. Allow for continuous collaboration in the event of a disconnected peer.
-2. Better 
+2. Offer a suitable method of peer discovery in cases where internet connection is not available.
 
 ## Peer Handling
 To achieve the first objective, our group has implemented the use of a P2P overlay network modeled after CAN (Content-Addressable Network). It is responsible for bootstrapping the network, appropriately balancing the P2P connections, and rearranging the network in the case of disconnected peers.
 
 ## Peer Discovery
-For the second objective, the project uses and Express server to host the local PeerJS server required for WebRTC signalling. The use of WebSockets facitaltes the effortless discovery of peers in the network.
+For the second objective, the project uses an Express server to host the local PeerJS server required for WebRTC signalling. WebSockets are also used to facilitate the effortless discovery of peers in the network.
 
 # Prerequisites
 
