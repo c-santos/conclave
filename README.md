@@ -20,7 +20,7 @@ To achieve the first objective, our group has implemented the use of a P2P overl
 ## Peer Discovery
 For the second objective, the project uses an Express server to host the local PeerJS server required for WebRTC signalling. WebSockets are also used to facilitate the effortless discovery of peers in the network.
 
-The overall flowchart of the original Conclave and the modified Conclave can be viewed in the following Miro board: https://miro.com/welcomeonboard/aFVuWHRpTlZNMTVLSGVNdXQ0M2h2a2VtbHA2OTVmbmxqZDRLOTh5OW1ldGhTYWY0dlVIaHZLT2xiRDZPOUptR3wzNDU4NzY0NTM2NTI0NjMwMzIxfDI=?share_link_id=145187002862
+The overall flowchart of the original Conclave and the modified Conclave can be viewed in this [Miro board](https://miro.com/welcomeonboard/aFVuWHRpTlZNMTVLSGVNdXQ0M2h2a2VtbHA2OTVmbmxqZDRLOTh5OW1ldGhTYWY0dlVIaHZLT2xiRDZPOUptR3wzNDU4NzY0NTM2NTI0NjMwMzIxfDI=?share_link_id=145187002862)
 
 # Prerequisites
 
